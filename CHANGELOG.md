@@ -5,6 +5,15 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026-11-26] - Visual Contrast Fixes
+
+### Fixed
+- Set a solid dark background (`#0b0d17`) on `html` and `body`, removing the `background-attachment: fixed` gradient that only painted behind the viewport and left the lower page white. All section headings (white on dark) now keep high contrast across the full document and in full-page screenshots.
+- Styled Contact card links in a readable light blue (`#60a5fa`, hover `#93c5fd`, underline on hover) matching the project-link palette, replacing the default dark-blue browser link colour on the dark card.
+
+### Changed
+- Renamed the third Skills card to "Data Analytics and Reporting" and the Torbay bullet to "Excel-to-Power BI Data Preparation" to avoid "Engineering" framing outside the Electrical Engineering degree. The bundled canonical CV PDF was left untouched.
+
 ## [2026-11-26] - CV Alignment 2026
 
 ### Changed

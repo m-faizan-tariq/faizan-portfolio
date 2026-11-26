@@ -22,10 +22,15 @@
 /* Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* Solid dark theme for the whole document so white section headings stay
+   readable at any scroll position (and in full-page captures). */
+html {
+    background-color: #0b0d17;
+}
+
 body {
     font-family: var(--font-main);
-    background: linear-gradient(135deg, #0a0a1a 0%, #12122a 30%, #1a1025 70%, #150f20 100%);
-    background-attachment: fixed;
+    background-color: #0b0d17;
     color: var(--text-primary);
     font-size: 16px;
     line-height: 1.6;
@@ -300,6 +305,19 @@ body {
 .skill-list {
     color: var(--text-secondary);
     font-size: 0.95rem;
+}
+
+/* Contact card links */
+#contact .card-content a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+#contact .card-content a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
 }
 
 /* Footer */
